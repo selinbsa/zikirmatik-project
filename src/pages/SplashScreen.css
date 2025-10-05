@@ -1,0 +1,22 @@
+.splash-container {
+  background-color: #4b6247;
+  height: 100vh;              
+  width: 100vw;            
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;                  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.splash-box {
+  border: 2px solid white;
+  padding: 200px 200px 200px 200px;
+  border-radius: 12px;
+}

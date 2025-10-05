@@ -1,0 +1,67 @@
+.add-page {
+  background: #4b6247;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.add-frame {
+  width: min(600px, 92vw);
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: clamp(40px, 6vw, 64px);
+  box-sizing: border-box;
+}
+
+.add-title {
+  margin: 0 0 24px;
+  font-size: clamp(20px, 3vw, 26px);
+}
+
+.add-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.add-form input {
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 14px;
+  background: #e7ece7;
+  color: #2c3e2c;
+  font-size: 15px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.save-btn, .cancel-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.save-btn {
+  background: #e7ece7;
+  color: #2c3e2c;
+}
+.save-btn:hover { filter: brightness(.96); }
+
+.cancel-btn {
+  background: #c95252;
+  color: #fff;
+}
+.cancel-btn:hover { filter: brightness(.95); }

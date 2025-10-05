@@ -1,0 +1,119 @@
+/* Arka plan ve hizalama */
+.name-container {
+  background: #4b6247;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* İç çerçeve */
+.name-frame {
+  width: min(720px, 92vw);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: clamp(20px, 6vw, 48px);
+  box-sizing: border-box;
+}
+
+/* Etiket */
+.name-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: clamp(16px, 2.2vw, 18px);
+  opacity: 0.95;
+}
+
+/* Input + edit butonu yatay satır */
+.name-row {
+  display: flex;              
+  align-items: center;
+  gap: 12px;                  
+  margin-bottom: clamp(28px, 6vh, 56px);
+}
+
+/* Metin alanı */
+/* Satır hizalaması */
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: clamp(28px, 6vh, 56px);
+}
+
+/* Input: kapsül görünüm */
+.name-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 56px;
+  border-radius: 28px;
+  border: 1px solid #ffffff66;
+  padding: 0 18px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #2c3e2c;
+  background: #dfe6df;
+  outline: none;
+}
+.name-input:disabled { opacity: .8; }
+
+/* Düzenle/Kilitle butonu: input ile uyumlu yükseklik */
+.edit-btn {
+  flex: 0 0 auto;
+  height: 56px;                 /* input ile aynı */
+  padding: 0 20px;
+  white-space: nowrap;          /* yazı taşmasın */
+  border-radius: 16px;
+  border: 1px solid #ffffff66;
+  background: #e7ece7;
+  color: #2c3e2c;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;         /* içerik dikey ortalansın */
+  align-items: center;
+  justify-content: center;
+  transition: background .2s, transform .12s;
+}
+.edit-btn:hover { background: #dbe2db; }
+.edit-btn:active { transform: translateY(1px); }
+.edit-btn:focus-visible {
+  outline: 2px solid #ffffffcc;
+  outline-offset: 2px;
+}
+/* Düzenleme açıkken (active) biraz vurgulu */
+.edit-btn.active {
+  background: #cfd6cf;
+  border-color: #ffffff99;
+}
+
+/* Küçük ekranlarda biraz küçültelim */
+@media (max-width: 520px) {
+  .name-input { height: 50px; border-radius: 25px; font-size: 16px; }
+  .edit-btn  { height: 50px; border-radius: 14px; padding: 0 16px; font-size: 15px; }
+}
+
+.start-btn {
+  display: block;
+  margin: 0 auto;               /* ortalar */
+  margin-top: clamp(12px, 3vh, 24px);
+  padding: 12px 32px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  color: #2c3e2c;
+  background: #e7ece7;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.start-btn:hover {
+  background: #dbe2db;
+  transform: translateY(-1px);
+}
+
+.start-btn:active {
+  transform: translateY(0);
+}
