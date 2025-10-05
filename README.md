@@ -6,7 +6,7 @@ Kullanıcı dostu arayüzüyle kişisel zikirleri ekleyebilir, sayaçla takip ed
 ---
 
 ## Live Demo
-
+https://zikirmatikprojesi.netlify.app/
 
 ---
 
